@@ -1,0 +1,201 @@
+/* CSSリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body{
+    /* デフォルトフォント設定 */
+    color: rgb(59, 62, 62);
+    font-family: "Zen Maru Gothic", sans-serif;
+    background-image: url(media/backimg2.jpg);
+    text-align: center;
+}
+
+body p{
+    font-size: 18px;
+}
+
+.button{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(218, 208, 196);
+    font-weight: bold;
+    border:3px, solid, rgb(218, 208, 196);
+    border-radius: 10px;
+}
+
+
+header{
+    height: 100px;
+    background-color: rgb(218, 208, 196);
+    border-bottom: rgb(59, 62, 62), solid,2px ;
+}
+
+header h1{
+    margin-left: 40px;
+    float: left;
+    line-height: 100px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+header ul{
+    float: right;
+    list-style: none;
+    padding-top: 45px;
+    font-weight: bold;
+}
+
+header li{
+    float: left;
+    padding-right: 20px;
+}
+
+.home-main{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    border: 2px, dashed, rgb(59, 62, 62);
+    border-radius: 30px;
+}
+
+.home-main h2{
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+
+.home-menu{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.home-menu h2{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.home-menu-container ul{
+    height: 550px;
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* 等間隔に配置 */
+    align-items: flex-start; /* 上揃え（高さが違っても揃うように） */
+    width: 90%; /* 親要素の幅を調整（必要に応じて） */
+    margin: 0 auto; /* 中央寄せ */
+}
+
+.home-menu-contents{
+    list-style: none;
+    text-align: center;
+    width: 30%; /* 画像の幅を適切に調整 */
+    height: 600px;
+}
+
+.home-menu-contents img{
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.home-menu-img-container {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border: 20px solid transparent; 
+    border-image-source: url('media/roundLace.png');
+    border-image-slice: 40; /* 画像のどこを使うか指定 */
+    border-image-width: 50px; /* ボーダーの太さ */
+    border-image-outset: 0; /* はみ出しなし */
+    border-image-repeat: round; /* 画像が途切れないように調整 */
+    z-index: 10;
+}
+
+
+.home-menu-contents h3{
+    padding-bottom: 10px;
+}
+
+
+
+/* home-calender */
+.home-calender h2{
+    margin-bottom: 20px;
+}
+
+.home-calender-message{
+    margin-bottom: 20px;
+} 
+
+.home-calender-img-container {
+    width: 50%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border: 20px solid transparent; 
+    border-image-source: url('media/roundLace.png');
+    border-image-slice: 40; /* 画像のどこを使うか指定 */
+    border-image-width: 50px; /* ボーダーの太さ */
+    border-image-outset: 0; /* はみ出しなし */
+    border-image-repeat: round; /* 画像が途切れないように調整 */
+    z-index: 10;
+}
+
+.home-calender img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* home-inquire */
+.home-inquire h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.home-inquire-message{
+    padding-bottom: 20px;
+}
+
+.home-inquire a{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+/* footer */
+footer {
+    background-color: #DAD0C4;
+    color: #555;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+  }
+
+  footer small {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  footer a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
